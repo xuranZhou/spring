@@ -62,4 +62,6 @@
 <!--   <property name="userDao" ref="userDao"></property>&ndash;&gt;-->
 <!--    <bean id="userService" class="com.itheima.service.impl.UserServiceImpl" p:userDao-ref="userDao"/>-->
 
+    <import resource="applicationContext-user.xml"/>
+    <import resource="applicationContext-product.xml"/>
 </beans>

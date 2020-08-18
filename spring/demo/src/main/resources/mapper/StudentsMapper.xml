@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--配置接口的映射，namespace命名空间设置为包名+接口名-->
+<mapper namespace="com.pcitc.demo.dao.StudentsMapper">
+    <resultMap id="StudentsMap" type="Students">
+        <id property="studentsId" column="students_id"/>
+        <result property="studentsName" column="students_name"/>
+        <result property="studentsGender" column="students_gender"/>
+        <result property="studentsNumber" column="students_number"/>
+    </resultMap>
+
+    <select id="getAllStudents" resultMap="StudentsMap">
+        select * from students
+    </select>
+
+</mapper>
