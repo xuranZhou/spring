@@ -15,4 +15,9 @@
         select * from students
     </select>
 
+    <insert id="saveStudent" >
+        insert into students(students_id, students_name, students_gender, students)
+        values
+        (#{studentsId,studentsName,studentsGender,studentsNumber})
+    </insert>
 </mapper>

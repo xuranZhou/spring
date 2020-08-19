@@ -21,6 +21,4 @@ public class StudentsController {
        List<Students> allStudents = studentsService.getAllStudents();
        return allStudents;
    }
-
-
 }

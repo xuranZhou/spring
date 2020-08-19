@@ -10,4 +10,6 @@ import java.util.List;
 @Component
 public interface StudentsMapper {
     List<Students> getAllStudents();
+
+    void saveStudent(Students students);
 }
