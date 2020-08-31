@@ -20,7 +20,7 @@ public class ProxyTest {
                     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
                        advice.before();//前置增强
                         Object invoke = method.invoke(target, args);//执行目标方法
-                        advice.afterRunning();//猴子增强
+                        advice.afterReturning();//猴子增强
                         return invoke;
                     }
                 }

@@ -1,4 +1,4 @@
-package com.itheima.proxy.jdk;
+package com.itheima.proxy.cglib;
 
 public class Advice {
     public void before(){
