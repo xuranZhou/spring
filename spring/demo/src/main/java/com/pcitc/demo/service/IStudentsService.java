@@ -5,7 +5,13 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+//@Service
 public interface IStudentsService {
     List<Students> getAllStudents();
+
+    void saveStudent(Students students);
+
+    void updateStudents(Students students);
+
+    void deleteStudentsById(long studentsId);
 }

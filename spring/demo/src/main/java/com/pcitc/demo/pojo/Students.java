@@ -7,7 +7,15 @@ public class Students {
   private String studentsName;
   private String studentsGender;
   private long studentsNumber;
+  private long studentsClass;
 
+  public long getStudentsClass() {
+    return studentsClass;
+  }
+
+  public void setStudentsClass(long studentsClass) {
+    this.studentsClass = studentsClass;
+  }
 
   public long getStudentsId() {
     return studentsId;

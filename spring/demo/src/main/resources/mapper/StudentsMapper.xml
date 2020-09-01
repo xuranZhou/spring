@@ -4,11 +4,12 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--配置接口的映射，namespace命名空间设置为包名+接口名-->
 <mapper namespace="com.pcitc.demo.dao.StudentsMapper">
-    <resultMap id="StudentsMap" type="Students">
+    <resultMap id="StudentsMap" type="com.pcitc.demo.pojo.Students">
         <id property="studentsId" column="students_id"/>
         <result property="studentsName" column="students_name"/>
         <result property="studentsGender" column="students_gender"/>
         <result property="studentsNumber" column="students_number"/>
+        <result property="studentsClass" column="students_class"/>
     </resultMap>
 
     <select id="getAllStudents" resultMap="StudentsMap">
@@ -16,8 +17,27 @@
     </select>
 
     <insert id="saveStudent" >
-        insert into students(students_id, students_name, students_gender, students)
+        insert into students(students_id, students_name, students_gender, students_number, students_class)
         values
-        (#{studentsId,studentsName,studentsGender,studentsNumber})
+        (#{studentsId},#{studentsName},#{studentsGender},#{studentsNumber},#{studentsClass})
     </insert>
+
+    <update id="updateStudents">
+        update students set students_name=#{studentsName}, students_gender=#{studentsGender}, students_number=#{studentsNumber}, students_class=#{studentsClass}
+        where students_id=#{studentsId}
+    </update>
+    
+    <select id="getStudentsById" resultMap="StudentsMap">
+        select * from students where students_id=#{studentsId}
+    </select>
+    
+    <delete id="deleteStudentsById">
+        delete from students where students_id=#{studentsId}
+    </delete>
+
+    <select id="getStudentsByClass" resultMap="StudentsMap">
+        select * from students
+        where students_class=#{studentsClass}
+    </select>
+
 </mapper>
