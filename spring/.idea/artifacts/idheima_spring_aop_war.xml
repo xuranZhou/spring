@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="idheima_spring_aop:war">
+    <output-path>$PROJECT_DIR$/idheima_spring_aop/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>idheima_spring_aop</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="idheima_spring_aop-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="idheima_spring_aop:war exploded" />
+    </root>
+  </artifact>
+</component>

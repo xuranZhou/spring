@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/idheima_spring_aop" />
     <file type="web" url="file://$PROJECT_DIR$/itheima_spring_ioc" />
   </component>
   <component name="JavaScriptSettings">
@@ -13,7 +14,6 @@
         <option value="$PROJECT_DIR$/itheima_spring_ioc/pom.xml" />
         <option value="$PROJECT_DIR$/demo/pom.xml" />
         <option value="$PROJECT_DIR$/itheima_spring_ioc_anno/pom.xml" />
-        <option value="$PROJECT_DIR$/pcitc_spring_demo/pom.xml" />
       </list>
     </option>
   </component>

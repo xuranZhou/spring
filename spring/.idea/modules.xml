@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/idheima_spring_aop/idheima_spring_aop.iml" filepath="$PROJECT_DIR$/idheima_spring_aop/idheima_spring_aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/itheima_spring_ioc/itheima_spring_ioc.iml" filepath="$PROJECT_DIR$/itheima_spring_ioc/itheima_spring_ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/itheima_spring_ioc_anno/itheima_spring_ioc_anno.iml" filepath="$PROJECT_DIR$/itheima_spring_ioc_anno/itheima_spring_ioc_anno.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pcitc_spring_demo/pcitc_spring_demo.iml" filepath="$PROJECT_DIR$/pcitc_spring_demo/pcitc_spring_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring.iml" filepath="$PROJECT_DIR$/.idea/spring.iml" />
     </modules>
   </component>

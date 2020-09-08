@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="idheima_spring_aop" />
         <module name="itheima_spring_ioc_anno" />
-        <module name="pcitc_spring_demo" />
         <module name="demo" />
         <module name="itheima_spring_ioc" />
       </profile>
