@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--配置接口的映射，namespace命名空间设置为包名+接口名-->
+<mapper namespace="com.pcitc.demo.dao.StudentsClassMapper">
+    <resultMap id="classMap" type="com.pcitc.demo.pojo.StudentsClass">
+        <id property="studentsClass" column="students_class"/>
+        <result property="className" column="class_name"/>
+
+        <collection property="studentsList"
+                    ofType="com.pcitc.demo.pojo.Students"
+                    javaType="java.util.ArrayList"
+                    select="com.pcitc.demo.dao.StudentsMapper.getStudentsByClass"
+                    column="students_class" />
+    </resultMap>
+    
+    <select id="getClassByStudentsClass" resultMap="classMap">
+        select * from studentsclass where students_class=#{studentsClass}
+    </select>
+    <select id="getAllClass" resultMap="classMap">
+        select * from studentsclass
+    </select>
+
+    <insert id="saveStudentClass" >
+        insert into studentsClass(students_class, class_name)
+        values
+        (#{studentsClass},#{className})
+    </insert>
+
+    <update id="updateStudentsClass">
+        update studentsclass set class_name=#{className}
+        where students_class=#{studentsClass}
+    </update>
+
+    <delete id="deleteStudentsClassByClass">
+        delete from studentsClass where students_class=#{studentsClass}
+    </delete>
+
+<!--    <select id="getStudentsClassById" resultMap="classMap">-->
+<!--        select * from studentsclass where students_class=#{studentsClass}-->
+<!--    </select>-->
+
+</mapper>
