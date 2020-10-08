@@ -1,6 +1,5 @@
 package com.pcitc.demo.controller;
 
-import com.pcitc.demo.pojo.Students;
 import com.pcitc.demo.pojo.StudentsClass;
 import com.pcitc.demo.service.IClassService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,7 +39,7 @@ public class StudentsClassController {
      * @param studentsClass
      * @return
      */
-    @PostMapping("/saveStudentClass")
+    @PostMapping("/StudentsClass")
     public String saveStudentClass(@RequestBody StudentsClass studentsClass){
         String s = iClassService.saveStudentClass(studentsClass);
         return s;
